@@ -12,8 +12,6 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.ResponseEntity;
 
-import static org.mockito.Mockito.times;
-
 @ExtendWith(MockitoExtension.class)
 public class UsuarioControllerTest {
 

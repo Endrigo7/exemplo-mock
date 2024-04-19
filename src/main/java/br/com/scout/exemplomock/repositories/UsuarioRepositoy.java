@@ -13,10 +13,10 @@ public class UsuarioRepositoy {
     private static final List<Usuario> listaDeUsuario = new ArrayList<>();
 
     public UsuarioRepositoy() {
-        Usuario usuario1 = new Usuario("123", "Joao");
-        Usuario usuario2 = new Usuario("234", "Maria");
-        Usuario usuario3 = new Usuario("345", "Josefina");
-        Usuario usuario4 = new Usuario("678", "Ana");
+        Usuario usuario1 = new Usuario("12311111111", "Joao");
+        Usuario usuario2 = new Usuario("23411111111", "Maria");
+        Usuario usuario3 = new Usuario("34511111111", "Josefina");
+        Usuario usuario4 = new Usuario("67811111111", "Ana");
 
         listaDeUsuario.add(usuario1);
         listaDeUsuario.add(usuario2);
@@ -31,6 +31,6 @@ public class UsuarioRepositoy {
                     .stream()
                     .filter(user -> user.getCpf().equals(cpf))
                     .findFirst()
-                    .orElseThrow(() -> new RuntimeException("Usuario não encontrado"));
+                    .orElseThrow(() -> new RuntimeException("Usuario com " + cpf + " não foi encontrado!"));
     }
 }
